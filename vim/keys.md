@@ -136,7 +136,7 @@ Tip Registers are being stored in ~/.viminfo, and will be loaded again on next r
  _ - black hole register  
 
 ## Marks and positions
-:marks - list of marks  
+`:marks` - list of marks  
 `ma` - set current position for mark A  
 `\`a` - jump to position of mark A  
 `y\`a` - yank text to position of mark A  
