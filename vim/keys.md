@@ -50,90 +50,90 @@ Tip Run vimtutor in a terminal to learn the first Vim commands.
 Tip Prefix a cursor movement command with a number to repeat it. For example, 4j moves down 4 lines.   
 
 ## Insert mode - inserting/appending text
-i - insert before the cursor   
-I - insert at the beginning of the line   
-a - insert (append) after the cursor   
-A - insert (append) at the end of the line   
-o - append (open) a new line below the current line   
-O - append (open) a new line above the current line   
-ea - insert (append) at the end of the word   
-Ctrl + h - delete the character before the cursor during insert mode   
-Ctrl + w - delete word before the cursor during insert mode   
-Ctrl + j - begin new line during insert mode   
-Ctrl + t - indent (move right) line one shiftwidth during insert mode   
-Ctrl + d - de-indent (move left) line one shiftwidth during insert mode   
-Ctrl + n - insert (auto-complete) next match before the cursor during insert mode   
-Ctrl + p - insert (auto-complete) previous match before the cursor during insert mode   
-Ctrl + rx - insert the contents of register x   
-Esc - exit insert mode   
+`i` - insert before the cursor   
+`I` - insert at the beginning of the line   
+`a` - insert (append) after the cursor   
+`A` - insert (append) at the end of the line   
+`o` - append (open) a new line below the current line   
+`O` - append (open) a new line above the current line   
+`ea` - insert (append) at the end of the word   
+`Ctrl + h` - delete the character before the cursor during insert mode   
+`Ctrl + w` - delete word before the cursor during insert mode   
+`Ctrl + j` - begin new line during insert mode   
+`Ctrl + t` - indent (move right) line one shiftwidth during insert mode   
+`Ctrl + d` - de-indent (move left) line one shiftwidth during insert mode   
+`Ctrl + n` - insert (auto-complete) next match before the cursor during insert mode   
+`Ctrl + p` - insert (auto-complete) previous match before the cursor during insert mode   
+`Ctrl + rx` - insert the contents of register x   
+`Esc` - exit insert mode   
 
 ## Editing
-r - replace a single character   
-J - join line below to the current one with one space in between   
-gJ - join line below to the current one without space in between   
-gwip - reflow paragraph   
-g~ - switch case up to motion   
-gu - change to lowercase up to motion   
-gU - change to uppercase up to motion   
-cc - change (replace) entire line   
-C - change (replace) to the end of the line   
-c$ - change (replace) to the end of the line   
-ciw - change (replace) entire word   
-cw - change (replace) to the end of the word   
-s - delete character and substitute text   
-S - delete line and substitute text (same as cc)   
-xp - transpose two letters (delete and paste)   
-u - undo   
-U - restore (undo) last changed line   
-Ctrl + r - redo   
-. - repeat last command   
+`r` - replace a single character   
+`J` - join line below to the current one with one space in between   
+`gJ` - join line below to the current one without space in between   
+`gwip` - reflow paragraph   
+`g~` - switch case up to motion   
+`gu` - change to lowercase up to motion   
+`gU` - change to uppercase up to motion   
+`cc` - change (replace) entire line   
+`C` - change (replace) to the end of the line   
+`c$` - change (replace) to the end of the line   
+`ciw` - change (replace) entire word   
+`cw` - change (replace) to the end of the word   
+`s` - delete character and substitute text   
+`S` - delete line and substitute text (same as cc)   
+`xp` - transpose two letters (delete and paste)   
+`u` - undo   
+`U` - restore (undo) last changed line   
+`Ctrl + r` - redo   
+`.` - repeat last command   
 
 ## Marking text (visual mode)
-v - start visual mode, mark lines, then do a command (like y-yank)  
-V - start linewise visual mode  
-o - move to other end of marked area  
-Ctrl + v - start visual block mode  
-O - move to other corner of block  
-aw - mark a word  
-ab - a block with ()  
-aB - a block with {}  
-at - a block with <> tags  
-ib - inner block with ()  
-iB - inner block with {}  
-it - inner block with <> tags  
-Esc - exit visual mode  
+`v` - start visual mode, mark lines, then do a command (like y-yank)  
+`V` - start linewise visual mode  
+`o` - move to other end of marked area  
+`Ctrl + v` - start visual block mode  
+`O` - move to other corner of block  
+`aw` - mark a word  
+`ab` - a block with ()  
+`aB` - a block with {}  
+`at` - a block with <> tags  
+`ib` - inner block with ()  
+`iB` - inner block with {}  
+`it` - inner block with <> tags  
+`Esc` - exit visual mode  
 Tip Instead of b or B one can also use ( or { respectively.  
 
 ## Visual commands
-\> - shift text right  
-< - shift text left  
-y - yank (copy) marked text  
-d - delete marked text  
-~ - switch case  
-u - change marked text to lowercase  
-U - change marked text to uppercase  
+`>` - shift text right  
+`<` - shift text left  
+`y` - yank (copy) marked text  
+`d` - delete marked text  
+`~` - switch case  
+`u` - change marked text to lowercase  
+`U` - change marked text to uppercase  
 
 ## Registers
-:reg[isters] - show registers content  
-"xy - yank into register x  
-"xp - paste contents of register x  
-"+y - yank into the system clipboard register  
-"+p - paste from the system clipboard register  
+`:reg[isters]` - show registers content  
+`"xy` - yank into register x  
+`"xp` - paste contents of register x  
+`"+y` - yank into the system clipboard register  
+`"+p` - paste from the system clipboard register  
 Tip Registers are being stored in ~/.viminfo, and will be loaded again on next restart of vim.  
 
 ## Tip Special registers:
- 0 - last yank  
- " - unnamed register, last delete or yank  
- % - current file name  
- # - alternate file name  
- * - clipboard contents (X11 primary)  
- + - clipboard contents (X11 clipboard)  
- / - last search pattern  
- : - last command-line  
- . - last inserted text  
- - - last small (less than a line) delete  
- = - expression register  
- _ - black hole register  
+`0` - last yank  
+`"` - unnamed register, last delete or yank  
+`%` - current file name  
+`#` - alternate file name  
+`*` - clipboard contents (X11 primary)  
+`+` - clipboard contents (X11 clipboard)  
+`/` - last search pattern  
+`:` - last command-line  
+`.` - last inserted text  
+`-` - last small (less than a line) delete  
+`=` - expression register  
+`_` - black hole register  
 
 ## Marks and positions
 `:marks` - list of marks  
@@ -154,24 +154,24 @@ Tip Registers are being stored in ~/.viminfo, and will be loaded again on next r
 Tip To jump to a mark you can either use a backtick (`) or an apostrophe ('). Using an apostrophe jumps to the beginning (first non-black) of the line holding the mark.  
 
 ## Macros
-qa - record macro a  
-q - stop recording macro  
-@a - run macro a  
-@@ - rerun last run macro  
+`qa` - record macro a  
+`q` - stop recording macro  
+`@a` - run macro a  
+`@@` - rerun last run macro  
 
 ## Cut and paste
-yy - yank (copy) a line  
-2yy - yank (copy) 2 lines  
-yw - yank (copy) the characters of the word from the cursor position to the start of the next word  
-y$ - yank (copy) to end of line  
-p - put (paste) the clipboard after cursor  
-P - put (paste) before cursor  
-dd - delete (cut) a line  
-2dd - delete (cut) 2 lines  
-dw - delete (cut) the characters of the word from the cursor position to the start of the next word  
-D - delete (cut) to the end of the line  
-d$ - delete (cut) to the end of the line  
-x - delete (cut) character  
+`yy` - yank (copy) a line  
+`2yy` - yank (copy) 2 lines  
+`yw` - yank (copy) the characters of the word from the cursor position to the start of the next word  
+`y$` - yank (copy) to end of line  
+`p` - put (paste) the clipboard after cursor  
+`P` - put (paste) before cursor  
+`dd` - delete (cut) a line  
+`2dd` - delete (cut) 2 lines  
+`dw` - delete (cut) the characters of the word from the cursor position to the start of the next word  
+`D` - delete (cut) to the end of the line  
+`d$` - delete (cut) to the end of the line  
+`x` - delete (cut) character  
 
 ## Indent text
 `>>` - indent (move right) line one shiftwidth  
@@ -186,12 +186,12 @@ x - delete (cut) character
 `]p` - paste and adjust indent to current line  
 
 ## Exiting
-:w - write (save) the file, but don't exit  
-:w !sudo tee % - write out the current file using sudo  
-:wq or :x or ZZ - write (save) and quit  
-:q - quit (fails if there are unsaved changes)  
-:q! or ZQ - quit and throw away unsaved changes  
-:wqa - write (save) and quit on all tabs  
+`:w` - write (save) the file, but don't exit  
+`:w !sudo tee %` - write out the current file using sudo  
+`:wq` or `:x` or `ZZ` - write (save) and quit  
+`:q` - quit (fails if there are unsaved changes)  
+`:q!` or `ZQ` - quit and throw away unsaved changes  
+`:wqa` - write (save) and quit on all tabs  
 
 ## Search and replace
 /pattern - search for pattern  
