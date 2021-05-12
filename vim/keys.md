@@ -194,22 +194,22 @@ Tip To jump to a mark you can either use a backtick (`) or an apostrophe ('). Us
 `:wqa` - write (save) and quit on all tabs  
 
 ## Search and replace
-/pattern - search for pattern  
-?pattern - search backward for pattern  
-\vpattern - 'very magic' pattern: non-alphanumeric characters are interpreted as special regex symbols (no escaping needed)  
-n - repeat search in same direction  
-N - repeat search in opposite direction  
-:%s/old/new/g - replace all old with new throughout file  
-:%s/old/new/gc - replace all old with new throughout file with confirmations  
-:noh[lsearch] - remove highlighting of search matches  
+`/pattern` - search for pattern  
+`?pattern` - search backward for pattern  
+`\vpattern` - 'very magic' pattern: non-alphanumeric characters are interpreted as special regex symbols (no escaping needed)  
+`n` - repeat search in same direction  
+`N` - repeat search in opposite direction  
+`:%s/old/new/g` - replace all old with new throughout file  
+`:%s/old/new/gc` - replace all old with new throughout file with confirmations  
+`:noh[lsearch]` - remove highlighting of search matches  
 
 ## Search in multiple files
-:vim[grep] /pattern/ {`{file}`} - search for pattern in multiple files  
-e.g. :vim[grep] /foo/ **/*  
-:cn[ext] - jump to the next match  
-:cp[revious] - jump to the previous match  
-:cope[n] - open a window containing the list of matches  
-:ccl[ose] - close the quickfix window  
+``:vim[grep] /pattern/ {`{file}`}`` - search for pattern in multiple files  
+e.g. `:vim[grep] /foo/ **/*`  
+`:cn[ext]` - jump to the next match  
+`:cp[revious]` - jump to the previous match  
+`:cope[n]` - open a window containing the list of matches  
+`:ccl[ose]` - close the quickfix window  
 
 ## Tabs
 :tabnew or :tabnew {page.words.file} - open a file in a new tab  
