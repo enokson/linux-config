@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Script to show current keyboard layout in i3status bar
-# Requires https://github.com/nonpop/xkblayout-state
+# Requires xkb-switch 
 
 # Inspiration for wather display:
 # https://keheliya.blogspot.com/2018/01/weather-info-in-i3status.html
