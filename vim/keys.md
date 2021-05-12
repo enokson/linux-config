@@ -69,6 +69,7 @@ Tip Prefix a cursor movement command with a number to repeat it. For example, 4j
 
 ## Editing
 `r` - replace a single character   
+`R` - replace by typing
 `J` - join line below to the current one with one space in between   
 `gJ` - join line below to the current one without space in between   
 `gwip` - reflow paragraph   
