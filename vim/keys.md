@@ -143,7 +143,7 @@ Tip Registers are being stored in ~/.viminfo, and will be loaded again on next r
 `` `0 `` - go to the position where Vim was previously exited  
 `` `" `` - go to the position when last editing this file  
 `` `. `` - go to the position of the last change in this file  
-`` `` `` - go to the position before the last jump  
+`` ` `` `` ` `` - go to the position before the last jump  
 `:ju[mps]` - list of jumps  
 `Ctrl + i` - go to newer position in jump list  
 `Ctrl + o` - go to older position in jump list  
