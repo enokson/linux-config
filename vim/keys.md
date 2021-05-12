@@ -138,7 +138,7 @@ Tip Registers are being stored in ~/.viminfo, and will be loaded again on next r
 ## Marks and positions
 `:marks` - list of marks  
 `ma` - set current position for mark A  
-`\`a` - jump to position of mark A  
+``a` - jump to position of mark A  
 `y\`a` - yank text to position of mark A  
 `\`0` - go to the position where Vim was previously exited  
 `\`"` - go to the position when last editing this file  
